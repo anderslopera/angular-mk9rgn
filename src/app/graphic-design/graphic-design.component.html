@@ -1,8 +1,13 @@
 <h3>Graphic Design Portfolio</h3>
+<div class="w3-container">
 
-<div *ngFor="let item of portfolioItems | async">
-	<h1>{{ item.caption }}</h1>
+	<div *ngFor="let image of _albums; index">
 
-	<img src="{{ item.src }}" alt="Girl in a Jacket" height="357">
+		<div class="w3-card">
+			<img [src] = "image.src" width="275" (click)="open(i)"/>
+			<div class="w3-container">
+				<h5>{{ image.caption }}</h5>
 
-</div>
+			</div>
+		</div>
+	</div>
