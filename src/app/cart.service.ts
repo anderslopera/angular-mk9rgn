@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
-import { HttpClient } from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CartService {
@@ -20,12 +20,15 @@ export class CartService {
   }
 
   getShippingPrices() {
-    return this.http.get("/assets/shipping.json");
+    return this.http.get('/assets/shipping.json');
   }
 
   getGraphicDesignPortfolio() {
-    return this.http.get("/assets/graphic.json");
+    return this.http.get('/assets/graphic.json');
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient
+  ) { }
+
 }
