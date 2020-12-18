@@ -9,6 +9,8 @@ export class TopBarComponent implements OnInit {
 
   constructor() { }
 
+  isOffcanvas = true;
+  
   ngOnInit() {
   }
 

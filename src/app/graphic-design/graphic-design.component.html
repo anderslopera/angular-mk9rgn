@@ -1,13 +1,36 @@
 <h3>Graphic Design Portfolio</h3>
-<div class="w3-container">
 
-	<div *ngFor="let image of _albums; index">
 
-		<div class="w3-card">
-			<img [src] = "image.src" width="275" (click)="open(i)"/>
-			<div class="w3-container">
-				<h5>{{ image.caption }}</h5>
 
-			</div>
+<div class="simple-article-header">
+
+
+	<!-- Article Title -->
+	<h4 class="article-title">
+		<a href="#">
+			Wire Proxies
+		</a>
+	</h4>
+
+
+	<div class="article-post-image">
+		<div class="responsive-embed">
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jka5yrVOZXE" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
 		</div>
 	</div>
+
+	<div class="article-post-content">
+		<p>You want secure? Say no more. Wire offers fast and reliable proxies that come with both IP and user:pass
+			authentication, granting you quick access to vendor databases.</p>
+
+		<p>Proxies you can trust, that will leave the competition in the dust. Wire is the most trustworthy proxy
+			provider in the game. We have had some of the highest success rates of all providers. Wire way is the only
+			way!</p>
+
+	</div>
+
+</div>
+
+<app-portfolio-lightbox portfolioURL='/assets/graphic.json'></app-portfolio-lightbox>
